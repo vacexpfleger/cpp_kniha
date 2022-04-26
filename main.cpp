@@ -1,13 +1,31 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include "kniha.h"
 
 using namespace std;
 
 int main() {
-    string isbn, prefix, region, vydavatel, vydani;
+    string t;
+    string a;
+    string i;
+
+    kniha k1;
+    k1.print();
+
+    cout << "Zadej titul knihy: ";
+    cin >> t;
+    cout << "Zadej autora knihy: ";
+    cin >> a;
+    cout << "Zadej ISBN knihy: ";
+    cin >> i;
+
+    kniha k2(t, a, i);
+    k2.print();
+
+/*    string isbn, prefix, region, vydavatel, vydani;
     string* varArray[] = {&prefix, &region, &vydavatel, &vydani};
-    std::size_t pozice;
+    size_t pozice;
 
     cout << "Zadej ISBN: ";
     cin >> isbn;
@@ -25,7 +43,7 @@ int main() {
     cout << prefix << endl;
     cout << region << endl;
     cout << vydavatel << endl;
-    cout << vydani << endl;
+    cout << vydani << endl;*/
 
     return 0;
 }
