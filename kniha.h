@@ -5,6 +5,7 @@
 #ifndef UNTITLED4_KNIHA_H
 #define UNTITLED4_KNIHA_H
 #include <string>
+#include <vector>
 #include <iostream>
 #include <algorithm>
 
@@ -20,7 +21,13 @@ public:
     string author;
     string isbn;
     void print();
-    bool kontrola(string);
+    string getTitle() const;
+    string getAuthor() const;
+    string getISBN() const;
+    bool kontrola(string, string, string);
+    void parseISBN13(int, string);
+    void parseISBN10(int, string);
+    string prefix, region, vydavatel, vydani, kontrolniCislo;
 private:
 };
 

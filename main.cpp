@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 #include <algorithm>
 #include "kniha.h"
 
@@ -11,7 +12,7 @@ int main() {
     string i;
 
     kniha k1;
-    k1.print();
+    cout << k1.getTitle() << endl;
 
     cout << "Zadej titul knihy: ";
     cin >> t;
